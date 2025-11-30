@@ -1,0 +1,32 @@
+﻿@using MVC_Seyahat_Proje.Models.Siniflar
+@model List<iletisim>
+<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" name="AdSoyad" placeholder="Ad Soyad">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="email" class="form-control" name="Mail" placeholder="Mail">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" class="form-control" name="Konu" placeholder="Konu">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea name="Mesaj" class="form-control" cols="30" rows="6" placeholder="Mesajınız.."></textarea>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="submit" value="Mesaj Gönderin" class="btn btn-primary">
+                <div class="submitting"></div>
+            </div>
+        </div>
+    </div>
+</form>

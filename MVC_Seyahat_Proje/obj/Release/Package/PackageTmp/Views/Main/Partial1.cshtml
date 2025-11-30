@@ -1,0 +1,21 @@
+﻿@using MVC_Seyahat_Proje.Models.Siniflar
+@model List<Blog>
+<div class="con-bot">
+    @foreach (var x in Model)
+    {
+        <div class="left">
+            <div class="bot-left">
+                <img src="@x.BlokImage" alt="" style="width:280px;height:150px"/>
+            </div>
+            <div class="left-text">
+                <h4>@x.Baslik</h4>
+                <span class="doller">@x.Tarih.Date.ToShortDateString()</span>
+                <p>@x.Aciklama.Substring(0,85)<span style="font-weight:bolder">...</span></p>
+                <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Devamını Oku >></span></a></p>
+            </div>
+        </div>
+    }
+    @Html.Action("Partial2","Main")
+    
+    <div class="clear"></div>
+</div>

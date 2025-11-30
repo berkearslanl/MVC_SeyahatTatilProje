@@ -1,0 +1,19 @@
+﻿@using MVC_Seyahat_Proje.Models.Siniflar
+@model List<Blog>
+
+<div class="padding1">
+    <h4>En Beğendiğim Yerler</h4>
+    <div class="box-left">
+        @foreach (var x in Model)
+        {
+            <div class="bot-img">
+                <a href="/Blog/BlogDetay/@x.ID"><img style="width:500px;height:75px" src="@x.BlokImage" alt="" /></a>
+            </div>
+            <div class="bot-desc">
+                <p>@x.Aciklama.Substring(0,85) ...</p>
+            </div>
+            <div class="clear"></div>
+        }
+    </div>
+    @Html.Action("Partial5","Main")
+</div>

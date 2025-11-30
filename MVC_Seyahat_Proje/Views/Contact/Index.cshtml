@@ -1,0 +1,90 @@
+﻿@using MVC_Seyahat_Proje.Models.Siniflar
+@model List<iletisim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Contact Form 04</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/contact-form-04/css/style.css">
+
+</head>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="contact-wrap w-100 p-lg-5 p-4">
+                                    <h3 class="mb-4">Mesajınızı Gönderin..</h3>
+                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+                                        Mesajınız başarıyla gönderildi. Teşekkürler!
+                                    </div>
+                                    @Html.Action("MesajGonder", "Contact")
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-stretch">
+                                <div class="info-wrap w-100 p-lg-5 p-4 img">
+
+                                    <h3>İletişime Geçin</h3>
+                                    <p class="mb-4">Sizin için burdayız.. İstediğiniz her şeyi sorabilirsiniz!</p>
+                                    <div class="dbox w-100 d-flex align-items-start">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-map-marker"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                            <p><span>Adres:</span> Büyükçekmece/İstanbul</p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-phone"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                            <p><span>Telefon:</span> <a href="tel://1234567920" style="font-weight:bolder"> +905556667788</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-paper-plane"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                            <p><span>Mail:</span> <a href="mailto:info@yoursite.com" style="font-weight:bolder"> berkearslan@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="text pl-3">
+                                            <p><span>Web Site</span> <a href="#" style="font-weight:bolder">berkearslan.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
+
+

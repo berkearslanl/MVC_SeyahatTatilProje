@@ -1,0 +1,15 @@
+﻿@using MVC_Seyahat_Proje.Models.Siniflar
+@model List<Blog>
+
+<div class="box1-left">
+    @foreach (var x in Model)
+    {
+        <div class="bot-img">
+            <a href="/Blog/BlogDetay/@x.ID"><img style="width:500px;height:75px" src="@x.BlokImage" alt="" /></a>
+        </div>
+        <div class="bot-desc1">
+            <p>@x.Aciklama.Substring(0, 85) ... </p>
+        </div>
+        <div class="clear"></div>
+    }
+</div>
