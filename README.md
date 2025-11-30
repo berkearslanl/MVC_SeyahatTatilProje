@@ -6,7 +6,7 @@
 
 # 🙏 Teşekkür
 
-#### Bu proje boyunca bilgi birikimi, anlatım tarzı ve yönlendirmeleriyle gelişimime büyük katkı sağlayan değerli hocam Murat Yücedağ ’a teşekkür ederim.
+#### Bu proje boyunca bilgi birikimi, anlatım tarzı ve yönlendirmeleriyle gelişimime büyük katkı sağlayan değerli hocam **Murat Yücedağ**’a teşekkür ederim.
 
 ---
 
@@ -116,7 +116,22 @@
 > İletişim
 <img width="1892" height="918" alt="iletişim" src="https://github.com/user-attachments/assets/830036e0-00e4-4b57-9d8f-bf0eda70d8ff" /> <br>
 
+---
 
+# 🚀 Çalıştırma Adımları
+
+✔ Projeyi klonlayın
+
+```bash
+git clone [https://github.com/kullaniciadi/TravelTrip-MVC.git]
+```
+✔ Visual Studio ile projeyi açın
+
+✔ `Web.config` içindeki connection string kısmını kendi SQL Server ayarlarınıza göre düzenleyin
+
+✔ Veritabanını oluşturmak için EF Migrations kullanabilir veya mevcut .mdf bağlantısını kullanabilirsiniz
+
+✔ Projeyi çalıştırın (<b>IIS Express önerilir</b>)
 
 
 
